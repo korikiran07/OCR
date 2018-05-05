@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:src="@drawable/itr3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:id="@+id/imgSample"
+                android:layout_margin="10dp"
+                android:background="#CCC"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp" />
+            <TextView
+                android:layout_below="@+id/imgSample"
+                android:text="No Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblResult"
+                android:layout_margin="10dp"
+                android:textColor="#000" />
+            <Button
+                android:layout_below="@+id/lblResult"
+                android:id="@+id/btnCapture"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Capture"
+                android:layout_margin="10dp"
+                android:textColor="#FFF"
+                android:background="#000" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
